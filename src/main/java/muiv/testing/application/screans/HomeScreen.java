@@ -1,4 +1,6 @@
-package App;
+package muiv.testing.application.screans;
+
+import muiv.testing.application.App;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,18 +14,12 @@ public class HomeScreen extends JPanel {
         URL url = getClass().getResource("/muiv.png");
         JLabel picture = new JLabel ();
         picture.setAlignmentX(Component.CENTER_ALIGNMENT);
-        // check if url is null in case someone (forgot to put/removed) image in jar
-        if (url == null) {
-            System.err.println("Unable to load image");
-        } else {
-            ImageIcon logo = new ImageIcon(url);
-            picture.setIcon(logo);
-        }
 
-        // set layout to a boxlayout
+        ImageIcon logo = new ImageIcon(url);
+        picture.setIcon(logo);
+
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
 
-        // init buttons
         JButton createTest = new JButton("Создать тестирование");
         createTest.setMaximumSize(new Dimension(250, 90));
         createTest.setPreferredSize(new Dimension(250, 90));

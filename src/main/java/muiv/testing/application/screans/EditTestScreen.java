@@ -1,4 +1,7 @@
-package App;
+package muiv.testing.application.screans;
+
+import muiv.testing.application.App;
+import muiv.testing.application.entities.Test;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -16,16 +19,13 @@ public class EditTestScreen extends JPanel {
         final JPanel left = new JPanel();
         final JButton back = new JButton("Назад");
 
-        // to Home page
         back.addActionListener(App::home);
         left.add(back);
         top.add(left, BorderLayout.WEST);
 
-        // title
         final JLabel titleScreen = new JLabel("Редактировать тестирование", JLabel.CENTER);
         top.add(titleScreen, BorderLayout.CENTER);
 
-        // top right
         final JPanel buttons = new JPanel();
         final JButton loadFromFile = new JButton("Загрузить из файла");
         loadFromFile.addActionListener(this::loadFromFile);
@@ -36,7 +36,6 @@ public class EditTestScreen extends JPanel {
         top.add(buttons, BorderLayout.EAST);
         add(top, BorderLayout.NORTH);
 
-        // show test in scrollPane
         test = new Test();
         sp = new JScrollPane(test.getEditPanel());
         sp.setBorder(BorderFactory.createEmptyBorder());
@@ -55,7 +54,6 @@ public class EditTestScreen extends JPanel {
                         (JOptionPane.showConfirmDialog(getRootPane(), "Перезаписать выбранное тестирование?",
                                 "Подтверждение",
                                 JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE)
-
                                 == JOptionPane.OK_OPTION
                         )
                 )) {

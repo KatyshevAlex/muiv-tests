@@ -1,4 +1,7 @@
-package App;
+package muiv.testing.application.objects;
+
+import muiv.testing.application.entities.Test;
+import muiv.testing.application.exceptions.EmptyQuestionException;
 
 import javax.swing.*;
 
@@ -6,7 +9,6 @@ import java.awt.*;
 
 
 public class FillBlank implements TestQuestion {
-    private static final long serialVersionUID = -8375462480244920151L;
     private transient JTextArea questionTA;
     private transient JTextField answerTF;
     private transient JLabel correctAnswer;

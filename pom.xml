@@ -41,7 +41,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-          <mainClass>App.App</mainClass>
+          <mainClass>muiv.testing.application.App</mainClass>
         </configuration>
       </plugin>
       <plugin>
@@ -61,7 +61,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>App.App</mainClass>
+              <mainClass>muiv.testing.application.App</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -89,7 +89,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>App.App</mainClass>
+              <mainClass>muiv.testing.application.App</mainClass>
             </manifest>
           </archive>
         </configuration>

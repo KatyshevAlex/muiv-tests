@@ -1,4 +1,7 @@
-package App;
+package muiv.testing.application.objects;
+
+import muiv.testing.application.entities.Test;
+import muiv.testing.application.exceptions.EmptyQuestionException;
 
 import javax.swing.*;
 
@@ -24,7 +27,6 @@ public class MultipleChoice extends Multiple {
         }
     }
 
-    private static final long serialVersionUID = -3564040796584989713L;
     private int correctAnswer;
     private transient MyButtonGroup buttons = new MyButtonGroup();
     private transient HashMap<ButtonModel, Integer> buttonIDs = new HashMap<>();

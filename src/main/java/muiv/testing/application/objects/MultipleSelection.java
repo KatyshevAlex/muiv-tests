@@ -1,4 +1,7 @@
-package App;
+package muiv.testing.application.objects;
+
+import muiv.testing.application.entities.Test;
+import muiv.testing.application.exceptions.EmptyQuestionException;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -7,7 +10,6 @@ import java.util.ArrayList;
 
 
 public class MultipleSelection extends Multiple {
-    private static final long serialVersionUID = -4843741680223517983L;
     private boolean[] correctAnswer;
     private transient ArrayList<JCheckBox> choices = new ArrayList<>();
 

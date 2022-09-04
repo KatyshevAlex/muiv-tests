@@ -1,4 +1,6 @@
-package App;
+package muiv.testing.application.objects;
+
+import muiv.testing.application.exceptions.EmptyQuestionException;
 
 import java.io.Serializable;
 

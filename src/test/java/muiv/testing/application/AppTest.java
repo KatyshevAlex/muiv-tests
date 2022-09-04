@@ -1,4 +1,4 @@
-package App;
+package muiv.testing.application;
 
 import static org.junit.Assert.assertTrue;
 

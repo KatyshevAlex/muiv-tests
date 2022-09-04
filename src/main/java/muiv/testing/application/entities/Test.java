@@ -1,4 +1,10 @@
-package App;
+package muiv.testing.application.entities;
+
+import muiv.testing.application.exceptions.EmptyQuestionException;
+import muiv.testing.application.objects.FillBlank;
+import muiv.testing.application.objects.MultipleChoice;
+import muiv.testing.application.objects.MultipleSelection;
+import muiv.testing.application.objects.TestQuestion;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -261,7 +267,7 @@ public class Test {
             testScreen.add(Box.createRigidArea(new Dimension(0, 50)));
         }
 
-        submit = new JButton("Отправить на проверку");
+        submit = new JButton("Закончить");
         submit.setFont(submit.getFont().deriveFont(16f));
         submit.setPreferredSize(new Dimension(200, 50));
         submit.setMaximumSize(new Dimension(200, 50));
