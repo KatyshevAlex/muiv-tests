@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import javax.swing.JPanel;
 
-public interface QuizQuestion extends Serializable {
+public interface TestQuestion extends Serializable {
     JPanel getPanel();
     JPanel getPanelEditable();
     boolean check() throws EmptyQuestionException;

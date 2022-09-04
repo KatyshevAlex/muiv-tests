@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class FillBlank implements QuizQuestion {
+public class FillBlank implements TestQuestion {
     private static final long serialVersionUID = -8375462480244920151L;
     private transient JTextArea questionTA;
     private transient JTextField answerTF;
@@ -41,7 +41,7 @@ public class FillBlank implements QuizQuestion {
     }
 
     /**
-     * get question panel when editing quiz
+     * get question panel when editing test
      *
      * @return the panel to show
      */

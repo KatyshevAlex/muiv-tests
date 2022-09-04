@@ -15,7 +15,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public abstract class Multiple implements QuizQuestion {
+public abstract class Multiple implements TestQuestion {
 
     // transient fields are not serializable
     protected transient JPanel panel;

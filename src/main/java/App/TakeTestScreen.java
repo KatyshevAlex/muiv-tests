@@ -36,9 +36,7 @@ public class TakeTestScreen extends JPanel {
                 "Serialized Object files", Test.FILE_EXTENSION);
         jfc.setFileFilter(filter);
         int returnVal = jfc.showOpenDialog(getRootPane());
-        // check if user clicked approve option, and if there are more than one question,
-        // show another conferm dialog that informs user that he will lose his answer.
-        // If user clicks OK, then finally show the new quiz
+
         if ((returnVal == JFileChooser.APPROVE_OPTION) &&
                 (test.numQuestions() == 0 ||
                         (JOptionPane.showConfirmDialog(getRootPane(), "Предупреждение: Вы потеряете ответы из текущего тестирование",
