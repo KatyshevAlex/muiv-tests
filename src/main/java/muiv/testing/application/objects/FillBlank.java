@@ -1,6 +1,5 @@
 package muiv.testing.application.objects;
 
-import muiv.testing.application.entities.Test;
 import muiv.testing.application.exceptions.EmptyQuestionException;
 
 import javax.swing.*;

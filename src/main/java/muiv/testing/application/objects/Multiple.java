@@ -1,7 +1,5 @@
 package muiv.testing.application.objects;
 
-import muiv.testing.application.entities.Test;
-
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;

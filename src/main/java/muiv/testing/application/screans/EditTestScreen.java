@@ -1,7 +1,7 @@
 package muiv.testing.application.screans;
 
 import muiv.testing.application.App;
-import muiv.testing.application.entities.Test;
+import muiv.testing.application.objects.Test;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;

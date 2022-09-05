@@ -1,4 +1,4 @@
-package muiv.testing.application.entities;
+package muiv.testing.application.objects;
 
 import muiv.testing.application.exceptions.EmptyQuestionException;
 import muiv.testing.application.objects.FillBlank;
