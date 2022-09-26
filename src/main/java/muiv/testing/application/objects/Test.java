@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class Test {
     public static final String FILE_EXTENSION = "ser";
     public static final Color RED = new Color(255, 116, 165, 76);
-    public static final Color GREEN = new Color(78, 239, 205, 76);
+    public static final Color GREEN = new Color(0, 255, 205, 100);
     private ArrayList<TestQuestion> questions = new ArrayList<>();
 
     private JPanel editTestPanel;

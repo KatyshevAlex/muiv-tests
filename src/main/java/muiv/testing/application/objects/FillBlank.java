@@ -41,11 +41,6 @@ public class FillBlank implements TestQuestion {
         return panel;
     }
 
-    /**
-     * get question panel when editing test
-     *
-     * @return the panel to show
-     */
     @Override
     public JPanel getPanelEditable() {
         JPanel editPanel = new JPanel(new GridBagLayout());
@@ -78,11 +73,6 @@ public class FillBlank implements TestQuestion {
         return editPanel;
     }
 
-    /**
-     * whether the answer filled in is the correct answer
-     *
-     * @return true if answer is correct
-     */
     @Override
     public boolean check() throws EmptyQuestionException {
         String answer = answerTF.getText().trim();
@@ -95,7 +85,6 @@ public class FillBlank implements TestQuestion {
     @Override
     public void colorAnswers() {
         String answer = answerTF.getText().trim();
-        // disable editing
         answerTF.setEnabled(false);
         if (answer.equalsIgnoreCase(answerText)) {
             answerTF.setBackground(Test.GREEN);
@@ -105,9 +94,6 @@ public class FillBlank implements TestQuestion {
         answerTF.setBackground(Test.RED);
     }
 
-    /**
-     * saves the question and the correct answer to serialized variables
-     */
     @Override
     public void save() throws EmptyQuestionException {
         String answer = answerTF.getText().trim();
@@ -117,4 +103,6 @@ public class FillBlank implements TestQuestion {
         questionText = questionTA.getText();
         answerText = answer;
     }
+
+    
 }

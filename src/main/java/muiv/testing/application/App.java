@@ -1,6 +1,7 @@
 package muiv.testing.application;
 
-import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMoonlightIJTheme;
+
+import com.formdev.flatlaf.FlatLightLaf;
 import muiv.testing.application.fraims.MainFrame;
 
 import javax.swing.SwingUtilities;
@@ -11,7 +12,8 @@ public class App {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            FlatMoonlightIJTheme.setup();
+            if (!FlatLightLaf.setup())
+                System.err.println("Error: not able to install look and feel");
             mainFrame = new MainFrame();
         });
     }
